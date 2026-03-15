@@ -1,0 +1,11 @@
+server:
+  address: 127.0.0.1
+  port: 8080
+
+executor:
+  ssh:
+    host: ${EXECUTOR_SSH_HOST:localhost}
+    user: ${EXECUTOR_SSH_USER:demo-user}
+    private-key: ${EXECUTOR_SSH_PRIVATE_KEY:/path/to/private/key}
+  docker:
+    image: ${EXECUTOR_DOCKER_IMAGE:alpine:3.20}
