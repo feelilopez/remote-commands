@@ -2,6 +2,8 @@
 
 Minimal demo service to execute shell scripts on a remote executor (friend's laptop) via SSH + Docker.
 
+Note: this is intentionally optimized for a clear demo, not production readiness.
+
 ## What this demo does
 
 - Accepts a script and CPU count.
@@ -132,5 +134,3 @@ curl -s -X POST http://localhost:8080/api/executions \
 # 2) poll status (replace <id>)
 curl -s http://localhost:8080/api/executions/<id>
 ```
-
-This is intentionally optimized for a clear demo, not production readiness.
